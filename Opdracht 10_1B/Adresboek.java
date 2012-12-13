@@ -11,9 +11,13 @@ public class Adresboek{
 	public void voegContactToe(Contact nwC){
 		alleContacten.add(nwC);
 	}
+	
+	public void VerwijderContact (Contact vwC) {
+		AlleContacten.remove(vwC);
+	}
 	public boolean heeftContact(String em){
-		boolean b=false;
-		for(Contact c:alleContacten){
+		boolean b = false;
+		for(Contact c : alleContacten){
 			if(c.email.equals(em)){
 				b=true;
 			}
@@ -48,3 +52,7 @@ public class Adresboek{
 		return s;
 	}
 }
+
+// hoi loekino
+
+
