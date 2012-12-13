@@ -13,13 +13,13 @@ public class Adresboek{
 	}
 	
 	public void VerwijderContact (Contact vwC) {
-		AlleContacten.remove(vwC);
+		AlleContacten.remove(vwC); // Wont work i guess.
 	}
 	public boolean heeftContact(String em){
 		boolean b = false;
 		for(Contact c : alleContacten){
 			if(c.email.equals(em)){
-				b=true;
+				b =true;
 			}
 		}
 		return b;
